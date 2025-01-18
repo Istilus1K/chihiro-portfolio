@@ -112,8 +112,8 @@ function App() {
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div className="bg-white p-4 rounded-lg shadow flex flex-col">
         <img
-          src="src/artworks/IMG_1972@2x.png"
-          srcSet="src/artworks/IMG_1972.png 1x, src/artworks/IMG_1972@2x.png 2x"
+          src="public/artworks/IMG_1972@2x.png"
+          srcSet="public/artworks/IMG_1972.png 1x, public/artworks/IMG_1972@2x.png 2x"
           alt="Artwork 1"
           className="w-full object-cover rounded-lg"
         />
@@ -122,8 +122,8 @@ function App() {
       </div>
       <div className="bg-white p-4 rounded-lg shadow flex flex-col">
         <img
-          src="src/artworks/IMG_9121@2x.png"
-          srcSet="src/artworks/IMG_9121.png 1x, src/artworks/IMG_9121@2x.png 2x"
+          src="public/artworks/IMG_9121@2x.png"
+          srcSet="public/artworks/IMG_9121.png 1x, public/artworks/IMG_9121@2x.png 2x"
           alt="Artwork 2"
           className="w-full object-cover rounded-lg"
         />
@@ -132,8 +132,8 @@ function App() {
       </div>
       <div className="bg-white p-4 rounded-lg shadow flex flex-col">
         <img
-          src="src/artworks/IMG_0238@2x.png"
-          srcSet="src/artworks/IMG_0238.png 1x, src/artworks/IMG_0238@2x.png 2x"
+          src="public/artworks/IMG_0238@2x.png"
+          srcSet="public/artworks/IMG_0238.png 1x, public/artworks/IMG_0238@2x.png 2x"
           alt="Artwork 3"
           className="w-full object-cover rounded-lg"
         />
