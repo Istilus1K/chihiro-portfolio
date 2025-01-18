@@ -144,45 +144,44 @@ function App() {
             </div>
           </div>
         </div>
-      </section>   
-{/* Artworks Section */}
-<section id="artworks" className="py-16 bg-neutral-50">
-  <div className="max-w-7xl mx-auto px-4">
-    <h2 className="text-3xl font-bold mb-12">Artworks</h2>
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div className="bg-white p-4 rounded-lg shadow flex flex-col">
-        <img
-          src="public/artworks/IMG_1972@2x.PNG"
-          srcSet="public/artworks/IMG_1972.PNG 1x, public/artworks/IMG_1972@2x.PNG 2x"
-          alt="Artwork 1"
-          className="w-full object-cover rounded-lg"
-        />
-        <h3 className="text-xl font-semibold mt-4">浮き、沈み</h3>
-        <p className="text-gray-600">アクリル絵の具</p>
-      </div>
-      <div className="bg-white p-4 rounded-lg shadow flex flex-col">
-        <img
-          src="public/artworks/IMG_9121@2x.PNG"
-          srcSet="public/artworks/IMG_9121.PNG 1x, public/artworks/IMG_9121@2x.PNG 2x"
-          alt="Artwork 2"
-          className="w-full object-cover rounded-lg"
-        />
-        <h3 className="text-xl font-semibold mt-4">石膏像</h3>
-        <p className="text-gray-600">デッサン</p>
-      </div>
-      <div className="bg-white p-4 rounded-lg shadow flex flex-col">
-        <img
-          src="public/artworks/IMG_0238@2x.PNG"
-          srcSet="public/artworks/IMG_0238.PNG 1x, public/artworks/IMG_0238@2x.PNG 2x"
-          alt="Artwork 3"
-          className="w-full object-cover rounded-lg"
-        />
-        <h3 className="text-xl font-semibold mt-4">ホラガイ</h3>
-        <p className="text-gray-600">デッサン</p>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
+      
+      {/* Artworks Section */}
+      <section id="artworks" className="py-16 bg-neutral-50">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12">Artworks</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+              <img
+                src="/artworks/IMG_1972.png"
+                alt="Artwork 1"
+                className="w-full object-cover rounded-lg"
+              />
+              <h3 className="text-xl font-semibold mt-4">浮き、沈み</h3>
+              <p className="text-gray-600">アクリル絵の具</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+              <img
+                src="/artworks/IMG_9121.png"
+                alt="Artwork 2"
+                className="w-full object-cover rounded-lg"
+              />
+              <h3 className="text-xl font-semibold mt-4">石膏像</h3>
+              <p className="text-gray-600">デッサン</p>
+            </div>
+            <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+              <img
+                src="/artworks/IMG_0238.png"
+                alt="Artwork 3"
+                className="w-full object-cover rounded-lg"
+              />
+              <h3 className="text-xl font-semibold mt-4">ホラガイ</h3>
+              <p className="text-gray-600">デッサン</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
