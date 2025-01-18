@@ -20,6 +20,7 @@ function App() {
               <a href="#about" className="text-gray-700 hover:text-gray-900">About</a>
               <a href="#projects" className="text-gray-700 hover:text-gray-900">Projects</a>
               <a href="#skills" className="text-gray-700 hover:text-gray-900">Skills</a>
+              <a href="#artworks" className="text-gray-700 hover:text-gray-900">Artworks</a>
               <a href="#contact" className="text-gray-700 hover:text-gray-900">Contact</a>
             </div>
 
@@ -42,6 +43,7 @@ function App() {
               <a href="#about" className="block px-3 py-2 text-gray-700 hover:text-gray-900">About</a>
               <a href="#projects" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Projects</a>
               <a href="#skills" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Skills</a>
+              <a href="#artworks" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Artworks</a>
               <a href="#contact" className="block px-3 py-2 text-gray-700 hover:text-gray-900">Contact</a>
             </div>
           </div>
@@ -67,58 +69,81 @@ function App() {
             <div className="bg-neutral-50 p-6 rounded-lg">
               <h3 className="text-xl font-semibold mb-4">Booking Resort レジデンスヴィラ管理システム</h3>
               <p className="text-gray-600 mb-4">
-                ホテルコンドミニアムのプレゼン用システムの設計・開発を担当。
-                効率的な予約管理と顧客体験の向上を実現。
+                <a
+                  href="https://www.residence-villa.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  レジデンスヴィラ
+                </a>の業務システムの開発。<br/>
+                顧客、施設、予約等の効率的な管理を実現。
               </p>
-              <div className="flex space-x-4">
-                <a href="https://github.com/" 
-                   className="inline-flex items-center text-gray-700 hover:text-gray-900">
-                  <Github className="w-5 h-5 mr-2" />
-                  GitHub
-                </a>
-              </div>
+              <div className="flex space-x-4"></div>
+            </div>
+          </div>
+
+          <div className="my-4"></div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-neutral-50 p-6 rounded-lg">
+              <h4 className="text-xl font-semibold mb-4">みらいパーク ゲーム開発</h4>
+              <p className="text-gray-600 mb-4">
+                <a
+                  href="https://miraii-park.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  みらいパーク
+                </a>掲載のゲームを複数作成。<br/>
+                直感的で自由度の高い実装を重視。
+              </p>
+              <div className="flex space-x-4"></div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section id="skills" className="py-16 bg-neutral-50">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-12">Skills</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Frontend</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Backend</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>Python</li>
-                <li>SQL</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Tools</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>Git</li>
-                <li>Docker</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Cloud</h3>
-              <ul className="space-y-2 text-gray-600">
-                <li>AWS</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
+{/* Artworks Section */}
+<section id="artworks" className="py-16 bg-neutral-50">
+  <div className="max-w-7xl mx-auto px-4">
+    <h2 className="text-3xl font-bold mb-12">Artworks</h2>
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+        <img
+          src="src/artworks/IMG_1972@2x.png"
+          srcSet="src/artworks/IMG_1972.png 1x, src/artworks/IMG_1972@2x.png 2x"
+          alt="Artwork 1"
+          className="w-full object-cover rounded-lg"
+        />
+        <h3 className="text-xl font-semibold mt-4">浮き、沈み</h3>
+        <p className="text-gray-600">アクリル絵の具</p>
+      </div>
+      <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+        <img
+          src="src/artworks/IMG_9121@2x.png"
+          srcSet="src/artworks/IMG_9121.png 1x, src/artworks/IMG_9121@2x.png 2x"
+          alt="Artwork 2"
+          className="w-full object-cover rounded-lg"
+        />
+        <h3 className="text-xl font-semibold mt-4">石膏像</h3>
+        <p className="text-gray-600">デッサン</p>
+      </div>
+      <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+        <img
+          src="src/artworks/IMG_0238@2x.png"
+          srcSet="src/artworks/IMG_0238.png 1x, src/artworks/IMG_0238@2x.png 2x"
+          alt="Artwork 3"
+          className="w-full object-cover rounded-lg"
+        />
+        <h3 className="text-xl font-semibold mt-4">ホラガイ</h3>
+        <p className="text-gray-600">デッサン</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-white">
@@ -130,7 +155,7 @@ function App() {
               <Mail className="w-5 h-5 mr-2" />
               IstilusK@gmail.com
             </a>
-            <a href="https://github.com/" 
+            <a href="https://github.com/Istilus1K/" 
                className="inline-flex items-center text-gray-700 hover:text-gray-900">
               <Github className="w-5 h-5 mr-2" />
               GitHub
