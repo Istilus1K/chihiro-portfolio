@@ -158,7 +158,7 @@ function App() {
                 className="w-full object-cover rounded-lg"
               />
               <h3 className="text-xl font-semibold mt-4">浮き、沈み</h3>
-              <p className="text-gray-600">アクリル絵の具</p>
+              <p className="text-gray-600">アクリル絵の</p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow flex flex-col">
               <img
