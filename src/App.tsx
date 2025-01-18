@@ -66,7 +66,7 @@ function App() {
                 href="#skills"
                 className="block px-3 py-2 text-gray-700 hover:text-gray-900"
               >
-                Skills
+                Skill
               </a>
               <a
                 href="#artworks"
@@ -153,7 +153,7 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-4 rounded-lg shadow flex flex-col">
               <img
-                src="/artworks/IMG_1972.png"
+                src="/artworks/kuzira.png"
                 alt="Artwork 1"
                 className="w-full object-cover rounded-lg"
               />
@@ -162,7 +162,7 @@ function App() {
             </div>
             <div className="bg-white p-4 rounded-lg shadow flex flex-col">
               <img
-                src="/artworks/IMG_9121.png"
+                src="/artworks/mama.png"
                 alt="Artwork 2"
                 className="w-full object-cover rounded-lg"
               />
@@ -171,7 +171,7 @@ function App() {
             </div>
             <div className="bg-white p-4 rounded-lg shadow flex flex-col">
               <img
-                src="/artworks/IMG_0238.png"
+                src="/artworks/horagai.png"
                 alt="Artwork 3"
                 className="w-full object-cover rounded-lg"
               />
