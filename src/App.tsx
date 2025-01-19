@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
-      {/* Navigation */}
-      <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
+            {/* Navigation */}
+            <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
@@ -23,8 +23,11 @@ function App() {
               <a href="#projects" className="text-gray-700 hover:text-gray-900">
                 Projects
               </a>
-              <a href="#skills" className="text-gray-700 hover:text-gray-900">
-                Skills
+              <a
+                href="#research-presentations" /* 追加 */
+                className="text-gray-700 hover:text-gray-900"
+              >
+                Research Presentation
               </a>
               <a href="#artworks" className="text-gray-700 hover:text-gray-900">
                 Artworks
@@ -63,10 +66,10 @@ function App() {
                 Projects
               </a>
               <a
-                href="#skills"
+                href="#research-presentations" /* 追加 */
                 className="block px-3 py-2 text-gray-700 hover:text-gray-900"
               >
-                Skill
+                Research Presentation
               </a>
               <a
                 href="#artworks"
@@ -84,13 +87,15 @@ function App() {
           </div>
         )}
       </nav>
+
       {/* Hero Section */}
       <section className="pt-32 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold mb-6">同志社大学大学院1年生</h2>
+          <h2 className="text-5xl font-bold mb-6">Chihiro Oshima</h2>
           <p className="text-xl text-gray-600 max-w-2xl">
-            フロントエンド開発とUI/UXデザインに情熱を持つエンジニア。
-            最新技術のトレンドを追いながら、使いやすく美しいインターフェースの創造を目指しています。
+            情報システム研究室所属。<br/>
+            開発プロジェクトや学会発表に積極的に参加。<br/>
+            また、絵を中心に様々な趣味にも力を入れている。
           </p>
         </div>
       </section>
@@ -116,13 +121,8 @@ function App() {
                 <br />
                 顧客、施設、予約等の効率的な管理を実現。
               </p>
-              <div className="flex space-x-4"></div>
             </div>
-          </div>
 
-          <div className="my-4"></div>
-
-          <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-neutral-50 p-6 rounded-lg">
               <h4 className="text-xl font-semibold mb-4">
                 みらいパーク ゲーム開発
@@ -140,12 +140,113 @@ function App() {
                 <br />
                 直感的で自由度の高い実装を重視。
               </p>
-              <div className="flex space-x-4"></div>
+            </div>
+          </div>
+
+          <div className="my-4"></div>
+
+          <div className="grid md:grid-cols-1 gap-8">
+            <div className="bg-neutral-50 p-6 rounded-lg">
+              <h4 className="text-xl font-semibold mb-4">
+                日立ヴァンタラ株式会社 インターンシップ
+              </h4>
+              <p className="text-gray-600 mb-4">
+                テーマ：【SE(プロジェクトガバナンススペシャリスト) 】ハイブリッドクラウドIT環境向け
+                <br />
+                Software Defined Storageのビジネス計画策定
+              </p>
             </div>
           </div>
         </div>
       </section>
       
+
+      {/* Research Presentations Section */}
+      <section id="research-presentations" className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-12">Research Presentations</h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-neutral-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">
+                2023年電子情報通信学会ソサイエティ大会
+              </h3>
+              <p className="text-gray-600 mb-4">
+                論文:「クラウドソーシングを利用した議事録作成における話者認識」
+                <br />
+                <a
+                  href="https://confit.atlas.jp/guide/event/society2023/subject/A-14-3/classlist"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  講演情報
+                </a>
+              </p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">
+                情報処理学会　第166回情報システムと社会環境研究会
+              </h3>
+              <p className="text-gray-600 mb-4">
+                論文:「クラウドソーシングにおける話者認識タスクの検討」
+                <br />
+                <a
+                  href="https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202402242749928283"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  論文リンク
+                </a>
+              </p>
+            </div>
+          </div>
+
+          <div className="my-4"></div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-neutral-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">
+                第28回学生会研究発表講演会
+              </h3>
+              <p className="text-gray-600 mb-4">
+                論文:「クラウドソーシングによる話者認識タスクの検討」
+                <br />
+                <a
+                  href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=230490&item_no=1&page_id=13&block_id=8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  論文リンク
+                </a>
+              </p>
+            </div>
+
+            <div className="bg-neutral-50 p-6 rounded-lg">
+              <h3 className="text-xl font-semibold mb-4">
+                第32回 マルチメディア通信と分散処理ワークショップ
+              </h3>
+              <p className="text-gray-600 mb-4">
+                論文:「speaker diarizatonの精度低下要因の考察」
+                <br />
+                <a
+                  href="https://ipsj.ixsq.nii.ac.jp/ej/?action=pages_view_main&active_action=repository_view_main_item_detail&item_id=240100&item_no=1&page_id=13&block_id=8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  論文リンク
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
       {/* Artworks Section */}
       <section id="artworks" className="py-16 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -183,23 +284,21 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 bg-white">
+      <section id="contact" className="py-16 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12">Contact</h2>
-          <div className="flex flex-col space-y-4">
-            <a
-              href="mailto:IstilusK@gmail.com"
-              className="inline-flex items-center text-gray-700 hover:text-gray-900"
-            >
-              <Mail className="w-5 h-5 mr-2" />
-              IstilusK@gmail.com
+          <p className="text-gray-600 mb-4">
+            Email: chihiro.oshima@myemail.com
+          </p>
+          <div className="flex space-x-6">
+            <a href="https://github.com/Istilus1K" target="_blank" rel="noopener noreferrer">
+              <Github className="w-6 h-6 text-gray-700" />
             </a>
-            <a
-              href="https://github.com/Istilus1K/"
-              className="inline-flex items-center text-gray-700 hover:text-gray-900"
-            >
-              <Github className="w-5 h-5 mr-2" />
-              GitHub
+            <a href="mailto:IstilusK@gmail.com">
+              <Mail className="w-6 h-6 text-gray-700" />
+            </a>
+            <a href="https://zenn.dev/chihiro_0203" target="_blank" rel="noopener noreferrer">
+              <span className="text-gray-700">Zenn</span>
             </a>
           </div>
         </div>
