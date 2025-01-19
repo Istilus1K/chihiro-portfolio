@@ -144,7 +144,7 @@ function App() {
               </p>
               <p className="text-gray-600 mb-2">
                 <a
-                  href="../public/videos/20250119_レントゲン.mp4" // publicフォルダー内のビデオファイルへのパス
+                  href="/videos/20250119_レントゲン.mp4" // publicフォルダー内のビデオファイルへのパス
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
