@@ -151,9 +151,7 @@ function App() {
                 日立ヴァンタラ株式会社 インターンシップ
               </h4>
               <p className="text-gray-600 mb-4">
-                テーマ：【SE(プロジェクトガバナンススペシャリスト) 】ハイブリッドクラウドIT環境向け
-                <br />
-                Software Defined Storageのビジネス計画策定
+                テーマ：【SE(プロジェクトガバナンススペシャリスト) 】ハイブリッドクラウドIT環境向けSoftware Defined Storageのビジネス計画策定
               </p>
             </div>
           </div>
@@ -294,8 +292,11 @@ function App() {
             <a href="https://github.com/Istilus1K" target="_blank" rel="noopener noreferrer">
               <Github className="w-6 h-6 text-gray-700" />
             </a>
-            <a href="mailto:IstilusK@gmail.com">
-              <Mail className="w-6 h-6 text-gray-700" />
+            <a
+              href="mailto:IstilusK@gmail.com"
+              className="inline-flex items-center justify-center w-8 h-8 text-gray-700 hover:text-gray-900"
+            >
+              <Mail className="w-6 h-6" />
             </a>
             <a href="https://zenn.dev/chihiro_0203" target="_blank" rel="noopener noreferrer">
               <span className="text-gray-700">Zenn</span>
