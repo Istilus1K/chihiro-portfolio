@@ -7,8 +7,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-neutral-50">
-            {/* Navigation */}
-            <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
+      {/* Navigation */}
+      <nav className="fixed w-full bg-white/80 backdrop-blur-sm z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex-shrink-0">
@@ -93,8 +93,10 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-bold mb-6">Chihiro Oshima</h2>
           <p className="text-xl text-gray-600 max-w-2xl">
-            情報システム研究室所属。<br/>
-            開発プロジェクトや学会発表に積極的に参加。<br/>
+            情報システム研究室所属。
+            <br />
+            開発プロジェクトや学会発表に積極的に参加。
+            <br />
             また、絵を中心に様々な趣味にも力を入れている。
           </p>
         </div>
@@ -140,6 +142,23 @@ function App() {
                 <br />
                 直感的で自由度の高い実装を重視。
               </p>
+              <p className="text-gray-600 mb-2">
+                <a
+                  href="../public/videos/20250119_レントゲン.mp4" // publicフォルダー内のビデオファイルへのパス
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:underline"
+                >
+                  ゲームの詳細はこちら
+                </a>
+              </p>
+              {/* <video
+                src="../public/videos/20250119_レントゲン.mp4" // publicフォルダー内のビデオファイルへのパス
+                width="100%"
+                controls
+              >
+                お使いのブラウザはビデオタグをサポートしていません。
+              </video> */}
             </div>
           </div>
 
@@ -151,13 +170,14 @@ function App() {
                 日立ヴァンタラ株式会社 インターンシップ
               </h4>
               <p className="text-gray-600 mb-4">
-                テーマ：【SE(プロジェクトガバナンススペシャリスト) 】ハイブリッドクラウドIT環境向けSoftware Defined Storageのビジネス計画策定
+                テーマ：【SE(プロジェクトガバナンススペシャリスト)
+                】ハイブリッドクラウドIT環境向けSoftware Defined
+                Storageのビジネス計画策定
               </p>
             </div>
           </div>
         </div>
       </section>
-      
 
       {/* Research Presentations Section */}
       <section id="research-presentations" className="py-16 bg-white">
@@ -244,7 +264,6 @@ function App() {
         </div>
       </section>
 
-
       {/* Artworks Section */}
       <section id="artworks" className="py-16 bg-neutral-50">
         <div className="max-w-7xl mx-auto px-4">
@@ -289,7 +308,11 @@ function App() {
             Email: chihiro.oshima@myemail.com
           </p>
           <div className="flex space-x-6">
-            <a href="https://github.com/Istilus1K" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Istilus1K"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Github className="w-6 h-6 text-gray-700" />
             </a>
             <a
@@ -298,7 +321,11 @@ function App() {
             >
               <Mail className="w-6 h-6" />
             </a>
-            <a href="https://zenn.dev/chihiro_0203" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://zenn.dev/chihiro_0203"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span className="text-gray-700">Zenn</span>
             </a>
           </div>
