@@ -112,7 +112,7 @@ function App() {
               </h3>
               <p className="text-gray-600 mb-4">
                 <a
-                  href="https://www.residence-villa.com/"
+                  href="https://www.residencevilla-awaji-mare.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
@@ -126,40 +126,33 @@ function App() {
             </div>
 
             <div className="bg-neutral-50 p-6 rounded-lg">
-              <h4 className="text-xl font-semibold mb-4">
-                みらいパーク ゲーム開発
-              </h4>
-              <p className="text-gray-600 mb-4">
-                <a
-                  href="https://miraii-park.com/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
-                >
-                  みらいパーク
-                </a>
-                掲載のゲームを複数作成。
-                <br />
-                直感的で自由度の高い実装を重視。
-              </p>
-              <p className="text-gray-600 mb-2">
-                <a
-                  href="/videos/20250119_レントゲン.mp4" // publicフォルダー内のビデオファイルへのパス
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline"
-                >
-                  ゲームの詳細はこちら
-                </a>
-              </p>
-              {/* <video
-                src="../public/videos/20250119_レントゲン.mp4" // publicフォルダー内のビデオファイルへのパス
-                width="100%"
-                controls
-              >
-                お使いのブラウザはビデオタグをサポートしていません。
-              </video> */}
-            </div>
+  <h4 className="text-xl font-semibold mb-4">
+    みらいパーク ゲーム開発
+  </h4>
+  <p className="text-gray-600 mb-4">
+    <a
+      href="https://miraii-park.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline"
+    >
+      みらいパーク
+    </a>
+    掲載の
+    <a
+      href="/videos/20250119_レントゲン.mp4" // publicフォルダー内のビデオファイルへのパス
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline"
+    >
+      ゲーム
+    </a>
+    を複数作成。
+    <br />
+    直感的で自由度の高い実装を重視。
+  </p>
+</div>
+
           </div>
 
           <div className="my-4"></div>
@@ -269,7 +262,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12">Artworks</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+            <div className="bg-white p-4 rounded-lg shadow flex flex-col relative">
               <img
                 src="/artworks/kuzira.png"
                 alt="Artwork 1"
@@ -277,6 +270,22 @@ function App() {
               />
               <h3 className="text-xl font-semibold mt-4">浮き、沈み</h3>
               <p className="text-gray-600">アクリル絵の具</p>
+              <div className="mt-2">
+                <button
+                  className="text-blue-500 hover:underline focus:outline-none"
+                  onClick={() => {
+                    const details = document.getElementById('artwork-details-1');
+                    if (details) {
+                      details.style.display = details.style.display === 'none' ? 'block' : 'none';
+                    }
+                  }}
+                >
+                  工夫点
+                </button>
+                <div id="artwork-details-1" style={{ display: 'none' }} className="absolute top-full left-0 mt-4 p-4 bg-white border rounded-lg shadow-lg w-full text-gray-600">
+                  制作当初、「浮き、沈み」というテーマから、画面の上下で浮いてるものと沈んでいるものを表現しようとしたが、面白みがなかった。そこから、「どのような画面に面白さを感じるか」という視点で考え直した。そして、奥行きや空間を感じるような構図に決まった。また、本来同じ場所には存在しないアヒルとクジラを描くことで、面白い画面にしている。
+                </div>
+              </div>
             </div>
             <div className="bg-white p-4 rounded-lg shadow flex flex-col">
               <img
@@ -287,13 +296,13 @@ function App() {
               <h3 className="text-xl font-semibold mt-4">石膏像</h3>
               <p className="text-gray-600">デッサン</p>
             </div>
-            <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+            <div className="bg-white p-4 rounded-lg shadow flex flex-col" style={{ height: '55%' }}>
               <img
                 src="/artworks/horagai.png"
                 alt="Artwork 3"
                 className="w-full object-cover rounded-lg"
               />
-              <h3 className="text-xl font-semibold mt-4">ホラガイ</h3>
+              <h3 className="text-xl font-semibold mt-4">法螺貝</h3>
               <p className="text-gray-600">デッサン</p>
             </div>
           </div>
@@ -305,7 +314,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12">Contact</h2>
           <p className="text-gray-600 mb-4">
-            Email: chihiro.oshima@myemail.com
+            Email: IstilusK@gmail.com
           </p>
           <div className="flex space-x-6">
             <a
