@@ -296,7 +296,7 @@ function App() {
               <h3 className="text-xl font-semibold mt-4">石膏像</h3>
               <p className="text-gray-600">デッサン</p>
             </div>
-            <div className="bg-white p-4 rounded-lg shadow flex flex-col" style={{ height: '55%' }}>
+            <div className="bg-white p-4 rounded-lg shadow flex flex-col">
               <img
                 src="/artworks/horagai.png"
                 alt="Artwork 3"
