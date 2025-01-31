@@ -112,7 +112,7 @@ function App() {
               </h3>
               <p className="text-gray-600 mb-4">
                 <a
-                  href="https://www.residencevilla-awaji-mare.com/"
+                  href="https://www.nishigaki-group.com/grande-residence-villa/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 hover:underline"
