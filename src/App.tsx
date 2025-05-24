@@ -413,6 +413,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-12">{t.artworksTitle}</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* 1カラム目：浮き、沈み */}
             <div className="bg-white p-4 rounded-lg shadow flex flex-col relative">
               <img
                 src="/artworks/kuzira.png"
@@ -438,6 +439,7 @@ function App() {
                 </div>
               </div>
             </div>
+            {/* 2カラム目：石膏像 */}
             <div className="bg-white p-4 rounded-lg shadow flex flex-col">
               <img
                 src="/artworks/mama.png"
@@ -447,14 +449,26 @@ function App() {
               <h3 className="text-xl font-semibold mt-4">{t.artwork2Title}</h3>
               <p className="text-gray-600">{t.artwork2Material}</p>
             </div>
-            <div className="bg-white p-4 rounded-lg shadow flex flex-col">
-              <img
-                src="/artworks/horagai.png"
-                alt={t.artwork3Title}
-                className="w-full object-cover rounded-lg"
-              />
-              <h3 className="text-xl font-semibold mt-4">{t.artwork3Title}</h3>
-              <p className="text-gray-600">{t.artwork3Material}</p>
+            {/* 3カラム目：法螺貝＋ピッチャー（上下） */}
+            <div className="flex flex-col gap-8">
+              <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+                <img
+                  src="/artworks/horagai.png"
+                  alt={t.artwork3Title}
+                  className="w-full object-cover rounded-lg"
+                />
+                <h3 className="text-xl font-semibold mt-4">{t.artwork3Title}</h3>
+                <p className="text-gray-600">{t.artwork3Material}</p>
+              </div>
+              <div className="bg-white p-4 rounded-lg shadow flex flex-col">
+                <img
+                  src="/artworks/pitcher.jpg"
+                  alt="ピッチャー"
+                  className="w-full object-cover rounded-lg"
+                />
+                <h3 className="text-xl font-semibold mt-4">ピッチャー</h3>
+                <p className="text-gray-600">デッサン</p>
+              </div>
             </div>
           </div>
         </div>
