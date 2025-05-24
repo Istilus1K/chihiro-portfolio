@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Github, Mail, Menu, X } from "lucide-react";
 
 const translations = {
   ja: {
     name: "大島千尋",
-    about: "自己紹介",
-    projects: "プロジェクト",
-    research: "研究発表",
-    artworks: "作品",
-    contact: "連絡先",
+    about: "About",
+    projects: "Projects",
+    research: "Research Presentation",
+    artworks: "Artworks",
+    contact: "Contact",
     heroTitle: "Chihiro Oshima",
     heroDesc: (
       <>
@@ -101,7 +101,7 @@ const translations = {
     artwork2Material: "デッサン",
     artwork3Title: "法螺貝",
     artwork3Material: "デッサン",
-    contact: "連絡先",
+    contact: "Contact",
     contactMail: "メール: IstilusK@gmail.com",
     zenn: "Zenn",
     footer: "© 2024 大島千尋. All rights reserved.",
@@ -213,10 +213,33 @@ const translations = {
   },
 };
 
+// 画像ごとにobjectPositionを指定
+const artworkImages = [
+  { src: "/artworks/kuzira.png", position: "45% 110%" },
+  { src: "/artworks/mama.png", position: "20% 0%" },
+  { src: "/artworks/horagai.png", position: "10% -50%" },
+  { src: "/artworks/pitcher.jpg", position: "60% -20%" },
+];
+
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [lang, setLang] = useState<"ja" | "en">("ja");
   const t = translations[lang];
+
+  // スライドショー用
+  const [current, setCurrent] = useState(0);
+  const [fade, setFade] = useState(true);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setFade(false);
+      setTimeout(() => {
+        setCurrent((prev) => (prev + 1) % artworkImages.length);
+        setFade(true);
+      }, 500);
+    }, 12000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div className="min-h-screen bg-neutral-50">
@@ -307,11 +330,35 @@ function App() {
 
       {/* Hero Section */}
       <section id="about" className="pt-32 pb-16 px-4">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-bold mb-6">{t.heroTitle}</h2>
-          <p className="text-xl text-gray-600 max-w-2xl">{t.heroDesc}</p>
+        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:justify-start">
+          {/* 左に寄せるためのラッパー */}
+          <div className="w-full flex md:block">
+            <div className="md:ml-[5%] lg:ml-[5%] xl:ml-0 flex flex-col md:flex-row items-center gap-8" style={{ width: "fit-content" }}>
+              {/* 左：画像スライドショー（やや左寄せ・小さめ・丸み） */}
+              <div className="flex-1 flex justify-center md:justify-end">
+                <div className="w-[140px] h-[140px] md:w-[180px] md:h-[180px] rounded-full overflow-hidden shadow-lg relative bg-white/70 border border-neutral-200">
+                  <img
+                    key={artworkImages[current].src}
+                    src={artworkImages[current].src}
+                    alt="artwork"
+                    className={`w-full h-full object-cover scale-110 transition-all duration-700 ${fade ? "opacity-100" : "opacity-0"}`}
+                    style={{
+                      objectPosition: artworkImages[current].position, // 画像ごとに位置を指定
+                      transitionProperty: "opacity",
+                    }}
+                  />
+                </div>
+              </div>
+              {/* 右：名前・自己紹介など（画像の右横に縦並び） */}
+              <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
+                <h2 className="text-4xl font-bold mb-2">{t.heroTitle}</h2>
+                <p className="text-lg text-gray-600 whitespace-normal md:whitespace-nowrap">{t.heroDesc}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
       {/* Projects Section */}
       <section id="projects" className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4">
