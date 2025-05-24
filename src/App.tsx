@@ -101,6 +101,8 @@ const translations = {
     artwork2Material: "デッサン",
     artwork3Title: "法螺貝",
     artwork3Material: "デッサン",
+    artwork4Title: "ピッチャー",
+    artwork4Material: "デッサン",
     contactMail: "メール: IstilusK@gmail.com",
     zenn: "Zenn",
     footer: "© 2024 大島千尋. All rights reserved.",
