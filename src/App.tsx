@@ -306,7 +306,7 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4">
+      <section id="about" className="pt-32 pb-16 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl font-bold mb-6">{t.heroTitle}</h2>
           <p className="text-xl text-gray-600 max-w-2xl">{t.heroDesc}</p>
