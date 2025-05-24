@@ -101,7 +101,6 @@ const translations = {
     artwork2Material: "デッサン",
     artwork3Title: "法螺貝",
     artwork3Material: "デッサン",
-    contact: "Contact",
     contactMail: "メール: IstilusK@gmail.com",
     zenn: "Zenn",
     footer: "© 2024 大島千尋. All rights reserved.",
@@ -205,6 +204,8 @@ const translations = {
     artwork2Material: "Drawing",
     artwork3Title: "Conch Shell",
     artwork3Material: "Drawing",
+    artwork4Title: "Pitcher",
+    artwork4Material: "Drawing",
     contactTitle: "Contact",
     contactMail: "Email: IstilusK@gmail.com",
     zenn: "Zenn",
@@ -510,11 +511,11 @@ function App() {
               <div className="bg-white p-4 rounded-lg shadow flex flex-col">
                 <img
                   src="/artworks/pitcher.jpg"
-                  alt="ピッチャー"
+                  alt={t.artwork4Title}
                   className="w-full object-cover rounded-lg"
                 />
-                <h3 className="text-xl font-semibold mt-4">ピッチャー</h3>
-                <p className="text-gray-600">デッサン</p>
+                <h3 className="text-xl font-semibold mt-4">{t.artwork4Title}</h3>
+                <p className="text-gray-600">{t.artwork4Material}</p>
               </div>
             </div>
           </div>
