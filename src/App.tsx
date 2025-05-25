@@ -64,9 +64,7 @@ const translations = {
     internshipTitle: "日立ヴァンタラ株式会社 インターンシップ",
     internshipDesc: (
       <>
-        テーマ：【SE(プロジェクトガバナンススペシャリスト)】
-        ハイブリッドクラウドIT環境向けSoftware Defined
-        Storageのビジネス計画策定
+        プロダクト提供に向けたビジネス戦略の提案業務
         <br />
         企業情報：
         <a
@@ -171,7 +169,7 @@ const translations = {
     internshipTitle: "Hitachi Vantara Internship",
     internshipDesc: (
       <>
-        Theme: [SE (Project Governance Specialist)] Business planning for Software Defined Storage for hybrid cloud IT environments.
+        Business strategy planning for product launch
         <br />
         Company Info:
         <a
