@@ -64,7 +64,7 @@ const translations = {
     internshipTitle: "日立ヴァンタラ株式会社 インターンシップ",
     internshipDesc: (
       <>
-        プロダクト提供に向けたビジネス戦略の提案業務
+        プロダクト提供に向けたビジネス戦略の提案業務に従事
         <br />
         企業情報：
         <a
@@ -169,7 +169,7 @@ const translations = {
     internshipTitle: "Hitachi Vantara Internship",
     internshipDesc: (
       <>
-        Business strategy planning for product launch
+        Contributed to business strategy planning for new product offerings.
         <br />
         Company Info:
         <a
